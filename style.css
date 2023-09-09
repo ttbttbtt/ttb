@@ -1,0 +1,152 @@
+
+body {
+    background-color:aliceblue;
+}
+
+.blue {
+    color:darkblue;
+}
+
+.it {
+    font-style: italic;
+}
+
+h4 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#gr {
+    /*border: solid;*/
+    font-weight: 900;
+}
+
+
+#priv {
+    text-align: center;
+    font-size: 200%;
+}
+
+#cel {
+    text-align: right;
+    font-family: fantasy;
+}
+
+ol {
+    color:fuchsia;
+    border: solid;
+    width:46%;
+}
+
+.fuk {
+    color: fuchsia;
+}
+
+#legend {
+    width:200px;
+    border:5px solid lightgray;
+    padding: 10px;/*padding: 10px 20px 30px 40px;*/
+    margin: 30px;
+    /*box-sizing: border-box;*/
+    /*box-sizing: content-box;*/
+    border-radius: 100px;
+    transition: 1s;
+}
+
+#legend:hover{
+    transform: translate(500px,0);
+}
+
+
+
+/*формы*/
+form {
+    border: solid lightgray;
+    width: fit-content;
+    padding: 10px;
+}
+
+label {
+    display:block;
+}
+
+thead tr td {
+    color: darkblue;
+    width: 14%;
+}
+
+td {
+    text-align: center;
+}
+
+#pf {
+    color:darkblue;
+}
+
+
+
+/* псевдоклассы, псевдоэлементы */
+li:first-child{
+    font-size:30px;
+}
+li:nth-child(2n+2){
+    color: green;
+}
+
+tbody tr td:nth-child(6) {
+    color: violet;
+}
+tbody tr td:nth-child(6):hover::after {
+    content: " - СУББОТА!";
+}
+
+tbody tr td:nth-child(7) {
+    color: red;
+}
+tbody tr td:nth-child(7):hover::after {
+    content: " - ВОСКРЕСЕНЬЕ!";
+}
+
+thead tr td {
+    transition: 50ms;
+}
+thead tr td:hover {
+    font-weight: 100;
+    font-size: 40px;
+}
+thead tr td:hover::after {
+    content: " - красава!";
+}
+
+td:empty {
+    background-color: greenyellow;
+}
+
+#pf {
+    transition: 100ms;
+}
+#pf:hover{
+    background-color: red;
+}
+
+#pfname {
+    transition: 1s;
+}
+#pfname:hover{
+    color:red;
+    font-size: 50px;
+}
+#pfname:hover::after{
+    content: " можно и фамилию";
+}
+
+label{
+    transition:0.2s;
+    transition-delay:0.5s;
+}
+label:hover{
+    color:violet;
+    font-size: 40px;
+    font-weight: bold;
+    border:3px solid violet;
+}

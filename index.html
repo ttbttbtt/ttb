@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-----
+    <h1 class="blue">Тен</h1>
+    <h2 class="blue">Татьяна</h2>
+    <h3 class="blue">Борисовна</h3>
+    -->
+
+    <h2 class="blue">Тен Татьяна Борисовна</h2>
+
+    <!-----
+    <span class="it">Просто человек</span>
+    ----->
+
+    <img src="./photo_ttb.jpg" alt="Танюшка" id="legend">
+
+    <p id="gr"><strong>Фронт энд 44 группа</strong></p>
+
+    <!--<a href="./contact.html" target="_blank">Контакт</a>-->
+    <b><a href="./contact.html">Мой контакт</a></b>
+    
+    <h4 class="blue">Образование:</h4>
+    <ul>
+        <li>Ташкентский Государственный Технический Университет, АСОИУ</li>
+        <li>Музыкальная школа по классу фортепиано</li>
+        <li>Курсы корейского языка при Корейском Культурном Центре</li>
+    </ul>
+
+    <h4 class="blue">Сертификаты:</h4>
+    <ul>
+        <li>IELTS 8.0</li>
+        <li>Korean Level 2.0</li>
+        <li>Шахматы КМС</li>
+    </ul>
+
+    <h4 class="blue">Знание языков:</h4>
+    <ol start="1">
+        <li>русский</li>
+        <li>английский</li>
+        <li>корейский</li>
+        <li>узбекский</li>
+        <li>польский</li>
+        <li>китайский</li>
+        <li>турецкий</li>
+        <li>иврит</li>
+    </ol>
+
+    <br>
+
+    <p class="blue"><b>Знание языков программирования:</b></p>
+    <table width="50%" border="1" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="25%" align="center"></td>
+            <td width="25%" align="center">Удовлетворительно</td>
+            <td width="25%" align="center">Хорошо</td>
+            <td width="25%" align="center">Отлично</td>
+        </tr>
+        <tr>
+            <td align="center">PLSQL</td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"><b>+</b></td>
+        </tr>
+        <tr>
+            <td align="center">JAVA</td>
+            <td align="center"><b>+</b></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td align="center">JS</td>
+            <td align="center"><b>+</b></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td align="center">Си</td>
+            <td align="center"></td>
+            <td align="center"><b>+</b></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td align="center">Си#</td>
+            <td align="center"></td>
+            <td align="center"><b>+</b></td>
+            <td align="center"></td>
+        </tr>
+        <tr>
+            <td align="center">Си++</td>
+            <td align="center"><b>+</b></td>
+            <td align="center"></td>
+            <td align="center"></td>
+        </tr>
+    </table>
+
+    <h4 class="blue">Опыт работы:</h4>
+    <ul>
+        <li>Госкомстат РУ (ведущий инженер-программист)</li>
+        <li>Аптеки (разработчик-фрилансер)</li>
+        <li>Автозавод (настройщик роботов)</li>
+    </ul>
+    
+    <p class="fuk" id="priv"><b>Личные качества:</b></p>
+    <span class="it">Ответственность, целеустремлённость, коммуникабельность, толерантность, позитив</span>
+    
+    <p class="fuk" id="cel"><b>Цели:</b></p>
+    <span class="it">Красная площадь, Невский проспект, минус 5 кг. Учиться, учиться и учиться</span>
+
+
+
+
+
+    <!-- Первая форма -->
+    <br><br><br>
+    <h2 id="pf">Первая форма</h2>
+    <form action="#"> <!-- #-фронт отправил данные сам себе, method-не нужен -->
+
+        <label id="pfname">
+            Имя: <input type="text" name="name" value="Вася">
+            <!-- value-начальное значение -->
+        </label>
+
+        <br>
+        <label>
+            Пароль: <input type="password" name="pass">
+        </label>
+
+        <br>
+        <label>
+            Возраст: <input type="number" name="age" placeholder="Полный возраст">
+            <!-- placeholder-подсказка серым, исчезает -->
+        </label>
+
+        <br>
+        <label>
+            <input type="checkbox" name="agreement">
+            Я согласен с условиями оферты
+        </label>
+
+        <br>
+        Пол:
+        <label>
+            <input type="radio" name="gender" value="male">
+            М
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">
+            Ж
+        </label>
+
+        <br>
+        Учился ли в Техникуме:
+        <label>
+            <input type="radio" name="TehnikumStudent" value="yes">
+            Да
+        </label>
+        <label>
+            <input type="radio" name="TehnikumStudent" value="no">
+            Нет
+        </label>
+
+        <br>
+        <input type="submit"><!-- кнопка отправки-->
+
+    </form>
+    
+
+
+
+
+    <!-- форма ОТПРАВКА СМС -->
+    <br><br><br>
+    <h2 class="blue">Отправка СМС</h2>
+    <form action="https://api.tehnikum.school/sms/sms.php" method="post">
+        <!-- https://api.tehnikum.school/sms/sms.php - адрес бэкэнда -->
+        <label>
+            Номер телефона: <input type="tel" name="sms_phone">
+        </label>
+
+        <br>
+        <label>
+            Текст СМС: <input type="text"name="sms_text">
+        </label>
+
+        <br>
+        <input type="hidden" name="token" value="Students:1234567">
+        <!-- hidden - спрятано, юзер не видит -->
+
+        <input type="submit" value="Отправить СМС"><!-- кнопка отправки-->
+
+    </form>
+    
+
+
+
+
+     <!-- дз №3 - форма СВЯЗАТЬСЯ СО МНОЙ -->
+    <br><br><br>
+    <h2 class="blue">Связаться со мной</h2>
+    <form action="#" name="forma">
+
+        <label>
+            Имя: <input type="text" name="name">
+        </label>
+
+        <br>
+        <label>
+            Номер телефона: <input type="tel" name="phone" value="998">
+        </label>
+
+        <br>
+        <label>
+            Email: <input type="email" name="pochta">
+        </label>
+
+        <br>
+        <label>
+            Тема обращения:
+            <select name="service" value="psih" size="1">
+                <option value="eng">Технический перевод с английского</option>
+                <option value="kor">Перевод с корейского</option>
+                <option value="shax">Подготовка к турниру по шахматам</option>
+                <option value="fono">Фортепиано на корпоративе</option>
+                <option value="psih" selected>Услуги психолога</option>
+            </select>
+        </label>
+
+        <br>
+        <label>
+            Поле для ввода сообщения:
+            <textarea name="mess" cols="30" rows="5" maxlength="2000"></textarea>
+        </label>
+
+        <br>
+        <input type="submit" value="Отправить">
+    </form>
+
+
+
+
+
+    <!------------------ ТАБЛИЦА. псевдоклассы, псевдоэлементы ------------------->
+    <br><br><br>
+    <p class="blue"><b>График дежурства в сентябре 2023 года:</b></p>
+    <table class="sept" width="100%" border="1" cellspacing="0" cellpadding="0">
+        <thead>
+            <tr>
+                <td>Тимур</td>
+                <td>Нодир</td>
+                <td>Шахзода</td>
+                <td>Владислава</td>
+                <td>Алексей</td>
+                <td>Татьяна</td>
+                <td>Амир</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td> 
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td> 
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td> 
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td></td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+    <br><br><br>
+
+</body>
+</html>
